@@ -114,3 +114,22 @@
 .footer__social-networks__link__image {
   min-height: 20px;
 }
+
+@media screen and (max-width: 1160px) {
+  .featured-container__heading__line {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  .featured-container__companies {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .featured-container__companies__name:not(:last-child){
+    margin-bottom: 10px;
+  }
+}

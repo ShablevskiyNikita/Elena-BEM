@@ -34,8 +34,8 @@ body {
   font-family: 'Yesteryear', cursive;
   font-size: 75px;
   color: white;
-  width: 10%;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
 }
 
 .header__navigation {
@@ -104,3 +104,64 @@ body {
   margin-left: 35px;
 }
 
+@media screen and (max-width: 920px) {
+  .main-heading {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header{
+    height: 600px;
+  }
+  .header__navigation {
+    justify-content: space-between;
+  }
+
+  .header__navigation__button{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .main-heading {
+    font-size: 35px;
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+
+  .lines:before,
+  .lines:after {
+    height: 2px;
+    width: 10%;
+  }
+
+  .lines:before {
+    right: 0.3em;
+    margin-left: -50%;
+    margin-right: 15px;
+  }
+
+  .lines:after {
+    left: 0.3em;
+    margin-right: -50%;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .header__navigation__button{
+    font-size: 12px;
+  }
+
+  .main-heading{
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .main-heading{
+    font-size: 23px;
+  }
+}

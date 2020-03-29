@@ -2,7 +2,7 @@
   background-color: #eeeeef;
 }
 
-.card-container{
+.card-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -29,17 +29,17 @@
   text-align: left;
 }
 
-.card__heading__without-margins{
-  margin:0;
+.card__heading__without-margins {
+  margin: 0;
   padding-top: 0 !important;
 }
 
-.card__heading_with-icon{
+.card__heading_with-icon {
   display: flex;
   align-items: center;
 }
 
-.card__heading__icon{
+.card__heading__icon {
   min-height: 28px;
   padding-right: 10px;
 }
@@ -66,24 +66,37 @@
   padding-bottom: 15px;
 }
 
-.card__heading_center-line:after{
+.card__heading_center-line:after {
   background-color: #b7b9ba;
   content: "";
-  display: inline-block;
+  display: block;
   height: 2px;
   position: relative;
   vertical-align: middle;
   width: 75%;
+  margin: 10px auto 0;
+}
+
+.card__heading_left-line:after {
+  background-color: #b7b9ba;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 75%;
+  margin: 20px 0 0;
 }
 
 .card__heading_across-block-line:after {
   background-color: #b7b9ba;
   content: "";
-  display: inline-block;
+  display: block;
   height: 2px;
   position: relative;
   vertical-align: middle;
   width: 100%;
+  margin: 10px auto 0;
 }
 
 .card__paragraph {
@@ -96,18 +109,18 @@
   padding-bottom: 20px;
 }
 
-.card__icon{
+.card__icon {
   min-height: 40px;
   max-height: 40px;
 }
 
 .card__image {
   min-width: 100%;
-  max-width:100%;
+  max-width: 100%;
   object-fit: contain;
 }
 
-.card__link{
+.card__link {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -120,11 +133,47 @@
   transition: color 1s;
 }
 
-.card__link:hover{
+.card__link:hover {
   color: #4f686f;
 }
 
-.card__link__arrow{
+.card__link__arrow {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 920px) {
+  .card-3 {
+    width: 100%;
+  }
+
+  .card-3:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .card__heading_center-line:after {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card-2 {
+    width: 100%;
+  }
+
+  .card-2:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .card-3 {
+    width: 100%;
+  }
+
+  .card-3:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .card__heading_center-line:after {
+    width: 30%;
+  }
 }
