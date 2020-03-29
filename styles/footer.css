@@ -1,0 +1,116 @@
+.footer {
+  height: 350px;
+}
+
+.featured-container {
+  height: 400px;
+  background-color: var(--turquoise-сolor);
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.featured-container__heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.featured-container__heading__icon {
+  min-height: 28px;
+  padding-right: 10px;
+}
+
+.featured-container__heading__line {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.featured-container__heading__line:after {
+  background-color: #4cbaa7;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.featured-container__companies {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured-container__companies__name {
+  display: inline-block;
+  font-size: 34px;
+}
+
+.tech-crunch {
+  font-family: 'Dancing Script', cursive;
+}
+
+.promail {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+.mashable {
+  font-family: 'Raleway', sans-serif;
+}
+
+.atlaspix {
+  font-family: 'Anton', sans-serif;
+}
+
+.footer__self-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgb(120, 123, 128);
+}
+
+.footer__self-info__copyright {
+  width: 60%;
+  justify-self: flex-start;
+}
+
+.footer__social-networks {
+  width: 15%;
+  justify-self: end;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-networks__link {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -ms-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+
+.footer__social-networks__link:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.footer__social-networks__link__image {
+  min-height: 20px;
+}
