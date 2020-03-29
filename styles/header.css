@@ -165,3 +165,12 @@ body {
     font-size: 23px;
   }
 }
+
+@media screen and (max-width: 340px){
+  .header__navigation__button{
+    font-size: 11px;
+  }
+  .main-heading{
+    font-size: 18px;
+  }
+}
